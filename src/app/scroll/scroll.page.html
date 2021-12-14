@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons> 
+    
+    <ion-title>scroll(saber quando usa o scroll)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content 
+[scrollEvents]="true">
+  <ion-button (click)="scrollbottom()">para baixo </ion-button> 
+
+
+<ion-list>
+  <ion-item *ngFor="let item of dummyList"> <!--for com array e objeto o item é objeto o list é o array-->
+    <ion-label>{{item.value}}</ion-label>
+  </ion-item>
+</ion-list>
+
+
+
+
+    <ion-button (click)="ScrollToTop()">para cima </ion-button>
+</ion-content>

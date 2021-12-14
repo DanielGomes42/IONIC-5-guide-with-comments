@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Scroll Infinito </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content><ion-list>
+   <ion-item *ngFor="let bosta of numeros |slice:0:limit"> <!--numerossss no pluras é a lista e bosta e onde vai o componetens da lista -->
+     <ion-label color="dark">{{bosta}}</ion-label><!-- serve para colocar a função numero dentro do label que aparece no brawer-->
+   </ion-item> </ion-list>
+<ion-infinite-scroll (ionInfinite)="popularinfinite($event)">
+  <ion-infinite-scroll-content></ion-infinite-scroll-content>
+
+</ion-infinite-scroll>
+</ion-content>

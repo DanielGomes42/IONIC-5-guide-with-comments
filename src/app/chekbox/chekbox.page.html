@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar color="dakr">
+        
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    
+    <ion-title>Action-Sheet...</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+<!-- Default Checkbox -->
+<ion-checkbox></ion-checkbox>
+
+<!-- Disabled Checkbox -->
+<ion-checkbox disabled="true"></ion-checkbox>
+
+<!-- Checked Checkbox -->
+<ion-checkbox checked="true"></ion-checkbox>
+
+<!-- Checkbox Colors -->
+<ion-checkbox color="primary"></ion-checkbox>
+<ion-checkbox color="secondary"></ion-checkbox>
+<ion-checkbox color="danger"></ion-checkbox>
+<ion-checkbox color="light"></ion-checkbox>
+<ion-checkbox color="dark"></ion-checkbox>
+
+<!-- Checkboxes in a List -->
+<ion-list>
+  <ion-item *ngFor="let entry of form">
+    <ion-label>{{entry.val}}</ion-label>
+    <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+  </ion-item>
+</ion-list>
+
+<ion-item>
+  <ion-label>Outro exemplo</ion-label>
+  <ion-checkbox color="dark"></ion-checkbox>
+</ion-item>
+<ion-item><!--ITEMM COM M DE MACACO -->
+  <ion-label>B</ion-label>
+  <ion-checkbox   color="dark"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>primary</ion-label>
+  <ion-checkbox checked="true"></ion-checkbox>
+</ion-item>
+
+
+<h3>
+   Meses
+</h3>
+<ion-list *ngFor="let mes of messes"><!--mes é o objeto é messes é o array-->
+  <ion-item>
+    <ion-label>{{mes.nomedoMes}}</ion-label>
+    <ion-checkbox [checked]="mes.marcado"[(ngModel)]="mes.marcado" color="danger"></ion-checkbox>
+  </ion-item>
+  <ion-button expand="block" (click)="exibirMeses()">exibirMeses Marcados</ion-button>
+</ion-list>
+
+</ion-content>
