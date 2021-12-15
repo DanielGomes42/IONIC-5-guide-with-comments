@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-reffreshe',
-  templateUrl: './reffreshe.page.html',
-  styleUrls: ['./reffreshe.page.scss'],
+  selector: 'refresher-example',
+  templateUrl: 'refresher-example.html',
+  styleUrls: ['./refresher-example.css'],
 })
-export class ReffreshePage implements OnInit {
+export class RefresherExample {
+  constructor() {}
 
-  constructor() { }
+  doRefresh(event) {
+    console.log('Begin async operation');
 
-  ngOnInit() {
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      event.target.complete();
+    }, 2000);
   }
-
 }
