@@ -72,6 +72,10 @@ const routes: Routes = [
     path: 'progress-bar',
     loadChildren: () => import('./progress-bar/progress-bar.module').then( m => m.ProgressBarPageModule)
   },
+  {
+    path: 'reffreshe',
+    loadChildren: () => import('./reffreshe/reffreshe.module').then( m => m.ReffreshePageModule)
+  },
  
  
 ];

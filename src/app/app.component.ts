@@ -20,9 +20,9 @@ export class AppComponent {
     { title: 'grid', url: 'grid', icon: 'warning' },
     { title: 'input', url: 'input', icon: 'warning' },
     { title: 'Scroll Infinito', url: 'infinitscroll', icon: 'warning' },
-    { title: 'List', url: 'list', icon: 'warning' },
-    { title: 'PROGRESS-BAR', url: 'progress-bar', icon: 'warning' },
-    { title: 'CHIPS', url: 'chip', icon: 'warning' },
+    { title: 'List', url: 'list', icon: 'warning"' },
+    { title: 'PROGRESS-BAR', url: 'progress-bar', icon: 'warning'},
+    { title: 'ion-refresher', url: 'ion-refresher', icon: 'warning' },
 
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
