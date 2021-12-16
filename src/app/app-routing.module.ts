@@ -76,6 +76,10 @@ const routes: Routes = [
     path: 'reffreshe',
     loadChildren: () => import('./reffreshe/reffreshe.module').then( m => m.ReffreshePageModule)
   },
+  {
+    path: 'test',
+    loadChildren: () => import('./test/test.module').then( m => m.TestPageModule)
+  },
  
  
 ];
