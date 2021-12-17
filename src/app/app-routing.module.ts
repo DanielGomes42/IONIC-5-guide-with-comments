@@ -75,7 +75,13 @@ const routes: Routes = [
   {
     path: 'reffreshe',
     loadChildren: () => import('./reffreshe/reffreshe.module').then( m => m.ReffreshePageModule)
+  },  {
+    path: 'reorder-group-example',
+    loadChildren: () => import('./reorder-group-example/reorder-group-example.module').then( m => m.ReorderGroupExamplePageModule)
   },
+
+  
+
  
  
 ];

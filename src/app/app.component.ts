@@ -23,6 +23,7 @@ export class AppComponent {
     { title: 'List', url: 'list', icon: 'list' },
     { title: 'PROGRESS-BAR', url: 'progress-bar', icon: 'code'},
     { title: 'Refresher', url: 'reffreshe', icon: 'warning' },
+    { title: 'reorder-group-example', url: 'reorder-group-example', icon: 'star' },
 
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
