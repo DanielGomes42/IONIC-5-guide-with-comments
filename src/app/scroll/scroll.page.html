@@ -9,19 +9,12 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content 
-[scrollEvents]="true">
+<ion-content [scrollEvents]="true">
   <ion-button (click)="scrollbottom()">para baixo </ion-button> 
-
-
-<ion-list>
-  <ion-item *ngFor="let item of dummyList"> <!--for com array e objeto o item é objeto o list é o array-->
-    <ion-label>{{item.value}}</ion-label>
-  </ion-item>
-</ion-list>
-
-
-
-
-    <ion-button (click)="ScrollToTop()">para cima </ion-button>
+      <ion-list>
+        <ion-item *ngFor="let item of dummyList"> <!--for com array e objeto o item é objeto o list é o array-->
+            <ion-label>{{item.value}}</ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-button (click)="ScrollToTop()">para cima </ion-button>
 </ion-content>
