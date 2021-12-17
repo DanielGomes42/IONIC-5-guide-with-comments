@@ -1,6 +1,7 @@
-Este é um app em Ionic5 /angular em construção  que possui os componentes do Ionic5 organizado em paginas , com o objetivo de ajudar programadores
-no desenvolvimento de  aplicativos em Ionic5/angular !
 
-Para iniciar você deve ter instaldo em sua máquina o cordova ,node.js , java (cuidado com a version mais atual, provavelmente terá que fazer dowgrade0)
+This is an Ionic5 / Angled app under construction that has the Ionic5 components organized into pages, with the aim of helping programmers
+in application development in Ionic5/angular !
 
-Vá em src/app/   aqui encontrá um variedade de componentes com observaçoes que ajudará na programação !
+To start you should have cordova ,node.js , java installed on your machine (be careful with the latest version, you will probably have to downgrade)
+
+Go to src/app/ here you will find a variety of components with notes that will help with programming !
