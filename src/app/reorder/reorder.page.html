@@ -1,3 +1,10 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>reorder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
 <!-- The reorder gesture is disabled by default, enable it to drag and drop items -->
 <ion-reorder-group (ionItemReorder)="doReorder($event)" disabled="false">
   <!-- Default reorder icon, end aligned items -->
@@ -66,3 +73,4 @@
     </ion-item>
   </ion-reorder>
 </ion-reorder-group>
+</ion-content>

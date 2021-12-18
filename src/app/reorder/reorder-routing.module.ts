@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ReorderGroupExamplePage } from './reorder-group-example.page';
+import { ReorderPage } from './reorder.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: ReorderGroupExamplePage
+    component: ReorderPage
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class ReorderGroupExamplePageRoutingModule {}
+export class ReorderPageRoutingModule {}
