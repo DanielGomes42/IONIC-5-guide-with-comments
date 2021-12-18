@@ -3,8 +3,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: '',
+    path: 'select',
+    redirectTo: 'select',
     pathMatch: 'full'
   },
   
@@ -75,10 +75,23 @@ const routes: Routes = [
   {
     path: 'reffreshe',
     loadChildren: () => import('./reffreshe/reffreshe.module').then( m => m.ReffreshePageModule)
-  },  {
+  },
+  {
     path: 'reorder',
     loadChildren: () => import('./reorder/reorder.module').then( m => m.ReorderPageModule)
   },
+  {
+    path: 'select',
+    loadChildren: () => import('./select/select.module').then( m => m.SelectPageModule)
+  },  {
+    path: 'toggle',
+    loadChildren: () => import('./toggle/toggle.module').then( m => m.TogglePageModule)
+  },
+  {
+    path: 'search-bar',
+    loadChildren: () => import('./search-bar/search-bar.module').then( m => m.SearchBarPageModule)
+  },
+
 
  
   

@@ -24,6 +24,10 @@ export class AppComponent {
     { title: 'PROGRESS-BAR', url: 'progress-bar', icon: 'code'},
     { title: 'Refresher', url: 'reffreshe', icon: 'warning' },
     { title: 'reorder', url: 'reorder', icon: 'star' },
+    { title: 'select', url: 'select', icon: 'clipboard' },
+    { title: 'toggle', url: 'toggle', icon: 'gift' },
+    { title: 'search-bar', url: 'search-bar', icon: 'golf' },
+
 
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
