@@ -91,6 +91,10 @@ const routes: Routes = [
     path: 'search-bar',
     loadChildren: () => import('./search-bar/search-bar.module').then( m => m.SearchBarPageModule)
   },
+  {
+    path: 'segment',
+    loadChildren: () => import('./segment/segment.module').then( m => m.SegmentPageModule)
+  },
 
 
  
