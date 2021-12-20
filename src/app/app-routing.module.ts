@@ -99,6 +99,10 @@ const routes: Routes = [
     path: 'slide',
     loadChildren: () => import('./slide/slide.module').then( m => m.SlidePageModule)
   },
+  {
+    path: 'toast',
+    loadChildren: () => import('./toast/toast.module').then( m => m.ToastPageModule)
+  },
 
 
  

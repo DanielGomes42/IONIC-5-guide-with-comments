@@ -30,6 +30,7 @@ this.pessoa=[
   }
  filtraritens(event){
    this.nome = event.target.value.toLowerCase();//assim que solta o botão
+   
 this.filtrarpessoa=this.pessoasfiltradas(this.nome);
  }
  pessoasfiltradas(nome) {
