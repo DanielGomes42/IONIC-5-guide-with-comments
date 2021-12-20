@@ -95,6 +95,10 @@ const routes: Routes = [
     path: 'segment',
     loadChildren: () => import('./segment/segment.module').then( m => m.SegmentPageModule)
   },
+  {
+    path: 'slide',
+    loadChildren: () => import('./slide/slide.module').then( m => m.SlidePageModule)
+  },
 
 
  
