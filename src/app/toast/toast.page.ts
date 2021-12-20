@@ -29,8 +29,9 @@ export class ToastPage implements OnInit {
        ({  
         header: 'Toast header',
       message: 'Click to Close',
-    
       position: 'bottom',
+      mode:"md",
+      
       buttons: [
         {
           side: 'start',
