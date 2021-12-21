@@ -16,11 +16,46 @@ export class AlertPage implements OnInit
 
 async alert(){
 
-  const alert = await this.alertCtrl.create({
+  const alert = await this.alertCtrl.create
+  ({
     header:"Alert",
     subHeader:"nivel omicron",
     message:"fudeo filhão vai pega fogo",
-    buttons:["ok"]
+    buttons: 
+    [{
+      text: 'Delete',
+      role: 'destructive',
+      
+      handler: () => {
+        console.log('Delete clicked');
+    }},
+
+      {
+      text: 'Share',
+      
+      handler: () => {
+        console.log('Share clicked');}
+      }, 
+      {
+      text: 'Play (open modal)',
+    
+      handler: () => {
+        console.log('Play clicked');
+      }
+    }, {
+      text: 'Favorite',
+      
+      handler: () => {
+        console.log('Favorite clicked');
+      }
+    }, {
+      text: 'Cancel',
+      
+      role: 'cancel',
+      handler: () => {
+        console.log('Cancel clicked');
+      }
+    }]
     
   });
   await alert.present();

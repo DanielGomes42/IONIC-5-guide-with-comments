@@ -13,23 +13,26 @@ export class ActionSheetPage implements OnInit {
   ngOnInit() {
   }
 async actionsheet(){
-  const actionSheet = await this.actionSheetController.create({
-    header: 'Albums',
-    cssClass: 'my-custom-class',
-    buttons: [{
+  const actionSheet = await this.actionSheetController.create
+  ({
+      header: 'Albums',
+      cssClass: 'my-custom-class',
+      buttons: 
+    [{
       text: 'Delete',
       role: 'destructive',
       icon: 'trash',
       handler: () => {
         console.log('Delete clicked');
-      }
-    }, {
+    }},
+
+      {
       text: 'Share',
       icon: 'share',
       handler: () => {
-        console.log('Share clicked');
-      }
-    }, {
+        console.log('Share clicked');}
+      }, 
+      {
       text: 'Play (open modal)',
       icon: 'caret-forward-circle',
       handler: () => {
