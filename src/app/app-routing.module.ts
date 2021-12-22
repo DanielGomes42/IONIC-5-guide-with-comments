@@ -111,6 +111,14 @@ const routes: Routes = [
     path: 'popover',
     loadChildren: () => import('./popover/popover.module').then( m => m.POPOVERPageModule)
   },
+  {
+    path: 'radio',
+    loadChildren: () => import('./radio/radio.module').then( m => m.RadioPageModule)
+  },
+  {
+    path: 'componentes-visuais',
+    loadChildren: () => import('./componentes-visuais/componentes-visuais.module').then( m => m.ComponentesVisuaisPageModule)
+  },
 
 
  

@@ -1,14 +1,15 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar>
     <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
       <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>SearchBar</ion-title>
+    </ion-buttons> 
+    <ion-title>PESQUISE</ion-title>
   </ion-toolbar>
-  <ion-searchbar color="light" [(ngModel)]="nome"  (keyup)="filtraritens($event)"></ion-searchbar> <! -- asd-->
-</ion-header>
+  </ion-header>
 
 <ion-content> 
+  <ion-searchbar color="light" [(ngModel)]="nome"  (keyup)="filtraritens($event)"></ion-searchbar>
   <ion-toolbar>
     
     <ion-list>
