@@ -119,6 +119,10 @@ const routes: Routes = [
     path: 'componentes-visuais',
     loadChildren: () => import('./componentes-visuais/componentes-visuais.module').then( m => m.ComponentesVisuaisPageModule)
   },
+  {
+    path: 'componentesnativo',
+    loadChildren: () => import('./componentesnativo/componentesnativo.module').then( m => m.COMPONENTESNATIVOPageModule)
+  },
 
 
  
