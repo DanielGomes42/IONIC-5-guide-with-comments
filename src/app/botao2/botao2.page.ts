@@ -16,6 +16,7 @@ export class Botao2Page implements OnInit {
   botao1()
   {
 this.navCtrl.navigateForward('botoes');
+
   }
 
 

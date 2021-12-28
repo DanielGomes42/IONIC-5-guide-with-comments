@@ -123,6 +123,10 @@ const routes: Routes = [
     path: 'componentesnativo',
     loadChildren: () => import('./componentesnativo/componentesnativo.module').then( m => m.COMPONENTESNATIVOPageModule)
   },
+  {
+    path: 'camera',
+    loadChildren: () => import('./camera/camera.module').then( m => m.CameraPageModule)
+  },
 
 
  

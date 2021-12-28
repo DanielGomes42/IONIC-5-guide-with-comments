@@ -9,6 +9,7 @@ export class AppComponent {
    
     { title: 'Componentes Visuais', url:'componentes-visuais', icon: 'star' },
     { title: 'Componentes Nativos', url:'componentesnativo', icon: 'star' },
+   
   ];
 ;
 
