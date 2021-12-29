@@ -14,7 +14,7 @@ export class COMPONENTESNATIVOPage implements OnInit {
       ngOnInit() {
       }
       
-      irparacamera(){
+      irparacamera(url){
         this.navCtrl.navigateForward('camera');
           }
     }
