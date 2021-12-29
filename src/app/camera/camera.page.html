@@ -9,5 +9,10 @@
 </ion-header>
 
 <ion-content>
- 
+  <ion-list>
+ <ion-button expand="full" (click)="tirarfoto()" >TIRAR FFOTO</ion-button>
+ <ion-card [hidden]="!foto">
+   <img src="{{foto}}">
+ </ion-card>
+</ion-list>
 </ion-content>
