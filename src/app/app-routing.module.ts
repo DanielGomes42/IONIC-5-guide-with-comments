@@ -127,6 +127,10 @@ const routes: Routes = [
     path: 'camera',
     loadChildren: () => import('./camera/camera.module').then( m => m.CameraPageModule)
   },
+  {
+    path: 'voz',
+    loadChildren: () => import('./voz/voz.module').then( m => m.VozPageModule)
+  },
 
 
  
