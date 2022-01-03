@@ -22,7 +22,7 @@ const routes: Routes = [
   },
   {
     path: 'action-sheet',
-    loadChildren: () => import('./action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
+    loadChildren: () => import('./componentes-visuais/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
   },
   {
     path: 'badge',
@@ -34,11 +34,11 @@ const routes: Routes = [
   },
   {
     path: 'chekbox',
-    loadChildren: () => import('./chekbox/chekbox.module').then( m => m.ChekboxPageModule)
+    loadChildren: () => import('./componentes-visuais/chekbox/chekbox.module').then( m => m.ChekboxPageModule)
   },
   {
     path: 'chip',
-    loadChildren: () => import('./chip/chip.module').then( m => m.ChipPageModule)
+    loadChildren: () => import('./componentes-visuais/chip/chip.module').then( m => m.ChipPageModule)
   },
   {
     path: 'scroll',
@@ -83,7 +83,8 @@ const routes: Routes = [
   {
     path: 'select',
     loadChildren: () => import('./select/select.module').then( m => m.SelectPageModule)
-  },  {
+  },
+  {
     path: 'toggle',
     loadChildren: () => import('./toggle/toggle.module').then( m => m.TogglePageModule)
   },

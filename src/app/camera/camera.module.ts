@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { CameraPageRoutingModule } from './camera-routing.module';
 
 import { CameraPage } from './camera.page';
-
+import { Camera, CameraOptions } from '@awesome-cordova-plugins/camera/ngx';
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +15,7 @@ import { CameraPage } from './camera.page';
     IonicModule,
     CameraPageRoutingModule
   ],
-  declarations: [CameraPage]
+  declarations: [CameraPage],
+  providers: [Camera]
 })
 export class CameraPageModule {}
