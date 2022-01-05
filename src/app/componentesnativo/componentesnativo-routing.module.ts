@@ -8,10 +8,8 @@ const routes: Routes = [
     path: '',
     component: COMPONENTESNATIVOPage
   },
-  {
-    path: 'voz',
-    loadChildren: () => import('./voz/voz.module').then( m => m.VozPageModule)
-  }
+  
+
 ];
 
 @NgModule({

@@ -3,8 +3,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'select',
-    redirectTo: 'select',
+    path: '',
+    redirectTo: '',
     pathMatch: 'full'
   },
   
@@ -129,18 +129,13 @@ const routes: Routes = [
     loadChildren: () => import('./camera/camera.module').then( m => m.CameraPageModule)
   },
   {
-    path: 'voz',
-    loadChildren: () => import('./voz/voz.module').then( m => m.VozPageModule)
+    path: 'voice',
+    loadChildren: () => import('./voice/voice.module').then( m => m.VoicePageModule)
   },
 
-
  
-  
 
   
-
- 
- 
 ];
 
 @NgModule({
